@@ -2,16 +2,16 @@
 #include <iostream>
 
 array_bag::array_bag() {
-  size = 0;
-  data = nullptr;
+	size = 0;
+	data = nullptr;
 }
 
 array_bag::array_bag(const array_bag &src) {
-  size = src.size;
-  data = new int[size];
-  for (int i = 0; i < size; i++) {
-	data[i] = src.data[i];
-  }
+	size = src.size;
+	data = new int[size];
+	for (int i = 0; i < size; i++) {
+		data[i] = src.data[i];
+	}
 }
 
 array_bag &array_bag::operator=(const array_bag &src) {
